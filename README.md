@@ -52,6 +52,25 @@ Hypit gives AI agents (Claude Code, Codex...) a language and system to create vi
 
 <p align="center"><em>SVML source on the left, with the corresponding video rendered live on the right.</em></p>
 
+## This fork and source checkout
+
+This repository is a fork of [hypit-ai/hypit](https://github.com/hypit-ai/hypit), hosted at [appletree-tech/hypit](https://github.com/appletree-tech/hypit). The product description, badges, community links, issue links and Skill installation below refer to the upstream project.
+
+`npx skills add hypit-ai/hypit -g` installs the **upstream Skill**. It does not install this fork's checkout or automatically select changes made here. To work on the code in this repository, use a source checkout:
+
+```bash
+git clone https://github.com/appletree-tech/hypit.git
+cd hypit
+corepack enable
+pnpm install --frozen-lockfile
+pnpm check
+pnpm test
+```
+
+This checkout requires **Node.js 22.15+** and **pnpm 10.33.0**, matching [package.json](package.json). Rendering and generation can need additional tools, runtime preparation and service credentials; see [CONTRIBUTING.md](CONTRIBUTING.md) and the relevant package or example README.
+
+Use this repository's [compare view](https://github.com/appletree-tech/hypit/compare) to inspect changes between local branches. Upstream support and contribution instructions below remain upstream instructions; retaining them does not describe a separate support policy for this fork.
+
 ## Install once
 
 ```bash
